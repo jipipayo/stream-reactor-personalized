@@ -11,7 +11,6 @@ ENV KAFKA_VERSION=2.1.0
 
 
 
-ENV STREAM_REACTOR_COMPONENT= herenameplugin
 ENV ARCHIVE=kafka-connect-${STREAM_REACTOR_COMPONENT}-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz
 ENV URL=https://github.com/landoop/stream-reactor/releases/download
 
