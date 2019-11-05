@@ -1,9 +1,9 @@
 #based on this release https://github.com/lensesio/stream-reactor/releases/tag/1.2.3
 #and inspired by this Dockerfile: https://github.com/lensesio/stream-reactor-dockers/blob/master/stream-reactor/Dockerfile
-
+FROM streamreactor/stream-reactor-base:1.2.3
 
 ENV BASE_VERSION=1.2.3
-FROM streamreactor/stream-reactor-base:${BASE_VERSION}
+
 
 
 ENV STREAM_REACTOR_VERSION=${BASE_VERSION}
