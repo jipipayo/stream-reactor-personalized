@@ -16,5 +16,8 @@ ENV URL=https://github.com/landoop/stream-reactor/releases/download
 
 RUN wget ${URL}/${STREAM_REACTOR_VERSION}/kafka-connect-cassandra-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz && tar -xf kafka-connect-cassandra-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz -C /opt/lenses/lib
 RUN wget ${URL}/${STREAM_REACTOR_VERSION}/kafka-connect-jms-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz && tar -xf kafka-connect-jms-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz -C /opt/lenses/lib
+RUN wget ${URL}/${STREAM_REACTOR_VERSION}/kafka-connect-ftp-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz && tar -xf kafka-connect-ftp-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz -C /opt/lenses/lib
+RUN wget ${URL}/${STREAM_REACTOR_VERSION}/kafka-connect-elastic6-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz && tar -xf kafka-connect-elastic6-${STREAM_REACTOR_VERSION}-${KAFKA_VERSION}-all.tar.gz -C /opt/lenses/lib
+
 
 CMD ["dumb-init", "/opt/lenses/bin/entry-point"]
